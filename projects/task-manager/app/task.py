@@ -15,6 +15,12 @@ class Task:
     def delete_task(self):
         del self
 
+    def to_dict(self):
+        return {
+            "title": self.title,
+            "completed": self.completed
+        }
+
 
 # my_task = Task("Learn Python")
 # my_task.show_task()
