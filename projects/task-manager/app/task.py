@@ -11,15 +11,18 @@ class Task:
     
     def rename(self, new_title):
         self.title = new_title
-    
-    def delete_task(self):
-        del self
 
     def to_dict(self):
         return {
             "title": self.title,
             "completed": self.completed
         }
+    
+    @classmethod
+    def from_dict(cls, task_dict):
+        task = cls(task_dict["title"])
+        task.completed = task_dict["completed"]
+        return task
 
 
 # my_task = Task("Learn Python")
