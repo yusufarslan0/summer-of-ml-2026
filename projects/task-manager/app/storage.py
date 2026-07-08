@@ -1,15 +1,9 @@
-from app.task import Task
 import json
 from pathlib import Path
 
-DATA_FILE = Path("data/tasks.json")
+from app.task import Task
 
-def add_task(task):
-    new_task = task.to_dict()
-    existing_tasks = [t.to_dict() for t in load_tasks()]
-    existing_tasks.append(new_task)
-    with DATA_FILE.open("w", encoding="utf-8") as json_file:
-        json.dump(existing_tasks, json_file, indent=4)
+DATA_FILE = Path("data/tasks.json")
 
 def load_tasks():
     try:
@@ -18,3 +12,9 @@ def load_tasks():
         return [Task.from_dict(task_dict) for task_dict in data]
     except FileNotFoundError:
         return []
+
+
+def save_tasks(tasks):
+    task_data = [task.to_dict() for task in tasks]
+    with DATA_FILE.open("w", encoding="utf-8") as json_file:
+        json.dump(task_data, json_file, indent=4)
