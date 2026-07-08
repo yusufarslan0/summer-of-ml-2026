@@ -10,7 +10,7 @@ def load_tasks():
         with DATA_FILE.open("r", encoding="utf-8") as json_file:
             data = json.load(json_file)
         return [Task.from_dict(task_dict) for task_dict in data]
-    except FileNotFoundError:
+    except (FileNotFoundError, json.decoder.JSONDecodeError):
         return []
 
 

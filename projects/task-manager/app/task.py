@@ -1,10 +1,11 @@
 class Task:
-    def __init__(self, title):
+    def __init__(self, id, title):
+        self.id = id
         self.title = title
         self.completed = False
 
     def show_task(self):
-        print(f"Task: {self.title} - Completed: {self.completed}")
+        print(f"ID: {self.id}, Task: {self.title} - Completed: {self.completed}")
 
     def mark_complete(self):
         self.completed = True
@@ -14,13 +15,14 @@ class Task:
 
     def to_dict(self):
         return {
+            "id": self.id,
             "title": self.title,
             "completed": self.completed
         }
     
     @classmethod
     def from_dict(cls, task_dict):
-        task = cls(task_dict["title"])
+        task = cls(id=task_dict["id"], title=task_dict["title"])
         task.completed = task_dict["completed"]
         return task
 
