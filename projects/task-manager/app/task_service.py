@@ -1,7 +1,7 @@
 from app.storage import load_tasks, save_tasks
 from app.task import Task
 
-def create_task(task_title):
+def create_task(task_title: str) -> None:
 	tasks = load_tasks()
 	
     # Find the smallest available id
@@ -15,3 +15,17 @@ def create_task(task_title):
 	new_task = Task(id=task_id, title=task_title)
 	tasks.append(new_task)
 	save_tasks(tasks)
+
+def delete_task(task_id: int) -> None:
+	tasks = load_tasks()
+	tasks = [task for task in tasks if task.id != task_id]
+	save_tasks(tasks)
+	print(f"Task deleted: {task_id}")
+
+def complete_task(task_id: int) -> None:
+	tasks = load_tasks()
+	for task in tasks:
+		if task.id == task_id:
+			task.mark_complete()
+	save_tasks(tasks)
+	print(f"Task completed: {task_id}")

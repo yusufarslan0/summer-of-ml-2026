@@ -5,7 +5,7 @@ from app.task import Task
 
 DATA_FILE = Path("data/tasks.json")
 
-def load_tasks():
+def load_tasks() -> list[Task]:
     try:
         with DATA_FILE.open("r", encoding="utf-8") as json_file:
             data = json.load(json_file)
@@ -14,7 +14,7 @@ def load_tasks():
         return []
 
 
-def save_tasks(tasks):
+def save_tasks(tasks: list[Task]) -> None:
     task_data = [task.to_dict() for task in tasks]
     with DATA_FILE.open("w", encoding="utf-8") as json_file:
         json.dump(task_data, json_file, indent=4)
