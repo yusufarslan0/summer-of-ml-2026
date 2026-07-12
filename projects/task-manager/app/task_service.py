@@ -18,9 +18,6 @@ def create_task(task_title: str) -> None:
 
 def delete_task(task_id: int) -> None:
 	tasks = load_tasks()
-<<<<<<< HEAD
-	tasks = [task for task in tasks if task.id != task_id]
-=======
 	original_count = len(tasks)
 
 	tasks = [task for task in tasks if task.id != task_id]
@@ -29,19 +26,11 @@ def delete_task(task_id: int) -> None:
 		print("Task not found.")
 		return
 	
->>>>>>> 4998ddc (feat: implement task operations and add type hints)
 	save_tasks(tasks)
 	print(f"Task deleted: {task_id}")
 
 def complete_task(task_id: int) -> None:
 	tasks = load_tasks()
-<<<<<<< HEAD
-	for task in tasks:
-		if task.id == task_id:
-			task.mark_complete()
-	save_tasks(tasks)
-	print(f"Task completed: {task_id}")
-=======
 	found = False
 
 	for task in tasks:
@@ -53,4 +42,3 @@ def complete_task(task_id: int) -> None:
 		print(f"Task completed: {task_id}")
 	else:
 		print("Task not found.")
->>>>>>> 4998ddc (feat: implement task operations and add type hints)

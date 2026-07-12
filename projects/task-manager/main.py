@@ -14,15 +14,6 @@ while True:
         for task in tasks:
             task.show_task()
     elif choice == "2":
-<<<<<<< HEAD
-        task_title = input("Enter task title: ")
-        create_task(task_title)
-    elif choice == "3":
-        task_id = int(input("Enter task ID to delete: "))
-        delete_task(task_id)
-    elif choice == "4":
-        task_id = int(input("Enter task ID to complete: "))
-=======
         task_title = get_valid_task_title()
         create_task(task_title)
     elif choice == "3":
@@ -30,7 +21,6 @@ while True:
         delete_task(task_id)
     elif choice == "4":
         task_id = get_valid_task_id("Enter task ID to complete: ")
->>>>>>> 4998ddc (feat: implement task operations and add type hints)
         complete_task(task_id)
     elif choice == "5":
         print("Exiting...")
