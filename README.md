@@ -1,448 +1,159 @@
-# Machine Learning Engineer Summer Roadmap (2 Months)
+# Summer of ML 2026
 
-## Objective
+This repository documents my journey toward becoming a Machine Learning Engineer during the summer of 2026.
 
-By the time I arrive at the University of Bremen, I want to have the practical software engineering skills required to begin building machine learning systems confidently.
-
-This summer is **not** about learning every ML algorithm. It is about becoming a better programmer and building a portfolio that demonstrates practical skills.
+The goal of this project is not to learn every machine learning algorithm, but to build a strong software engineering foundation through practical projects. Throughout the summer, I will improve my Python programming skills, learn data analysis and machine learning tools, and build a portfolio of projects that demonstrate my progress.
 
 ---
 
-# Final Goals
+## Objectives
 
-By the end of the summer, I should have:
+By the end of the summer, I aim to:
 
-* Strong Python fundamentals
-* Good understanding of Object-Oriented Programming
-* Comfortable using Git and GitHub
-* Practical experience with pandas and NumPy
-* Basic SQL knowledge
-* Familiarity with scikit-learn
-* Basic FastAPI knowledge
-* A professional GitHub profile
-* 2–3 small projects
-* 1 substantial machine learning project
-
----
-
-# Weekly Plan
-
-## Week 1 — Python Fundamentals
-
-### Topics
-
-* Functions
-* Modules
-* File handling
-* Exceptions
-* Virtual environments
-* Code organization
-
-### Learn
-
-* Clean code practices
-* VS Code shortcuts
-* Debugging
-
-### Project
-
-CLI Task Manager
-
-Features:
-
-* Add task
-* Delete task
-* Mark complete
-* Save tasks to file
-
-### Git
-
-Learn:
-
-* git init
-* add
-* commit
-* push
-* clone
-
-Upload the project to GitHub.
+* Strengthen my Python programming skills
+* Write clean, modular, and maintainable code
+* Become comfortable with Object-Oriented Programming
+* Gain confidence using Git and GitHub
+* Learn NumPy and pandas for data analysis
+* Learn SQL fundamentals
+* Build machine learning models using scikit-learn
+* Learn the basics of FastAPI
+* Create a professional GitHub portfolio
 
 ---
 
-## Week 2 — Object-Oriented Programming
+## Repository Structure
 
-### Topics
+```text
+summer-of-ml-2026/
+│
+├── projects/
+│   ├── task-manager/
+│   ├── ...
+│
+├── weekly-log/
+│
+└── README.md
+```
 
-* Classes
-* Objects
-* Inheritance
-* Composition
-* Properties
-* Static methods
-
-### Project
-
-Student Grade Manager
-
-Features:
-
-* Student class
-* Course class
-* Grade calculations
-* GPA calculation
-* Save/load data
-
-Focus on writing clean, readable code.
+* **projects/** contains the projects I build throughout the summer.
+* **weekly-log/** contains notes and progress logs.
+* This README provides an overview of the entire learning journey.
 
 ---
 
-## Week 3 — Data Analysis
+## Projects
 
-### Topics
+### 1. CLI Task Manager ✅
 
-NumPy
+A command-line task management application built with Python.
 
-* Arrays
-* Indexing
-* Broadcasting
+**Skills practiced**
 
-pandas
+* Python
+* Object-Oriented Programming
+* File I/O
+* JSON data storage
+* Type hints
+* Input validation
+* Modular project structure
+* Git and GitHub
 
-* Reading CSV files
-* Filtering
-* Grouping
-* Missing values
-* Merging
-* Aggregation
+---
 
-Matplotlib
+### 2. Data Analysis Project *(Planned)*
 
-* Histograms
-* Scatter plots
-* Bar charts
+A complete exploratory data analysis project using a real-world dataset.
 
-### SQL
+**Skills**
 
-Learn:
-
-* SELECT
-* WHERE
-* GROUP BY
-* ORDER BY
-* JOIN
-* HAVING
-
-### Project
-
-Choose one Kaggle dataset.
-
-Possible datasets:
-
-* Titanic
-* House Prices
-* Netflix
-* Spotify
-* FIFA
-
-Perform:
-
+* NumPy
+* pandas
+* Matplotlib
+* SQL
 * Data cleaning
 * Exploratory Data Analysis (EDA)
-* Visualizations
-* Basic feature engineering
-
-Upload everything to GitHub.
 
 ---
 
-# Main Project (Weeks 4–8)
+### 3. Machine Learning Prediction Platform *(Planned)*
 
-## Project Name
+The main project of this repository.
 
-Automatic Machine Learning Prediction Platform
+The application will allow users to upload a dataset, train machine learning models, compare their performance, and generate predictions.
 
-### Goal
+Planned technologies include:
 
-Create an application that allows a user to upload a dataset and automatically build machine learning models.
-
-This will become the centerpiece of my portfolio.
-
----
-
-## Week 4 — Data Pipeline
-
-Learn:
-
-* Data preprocessing
-* Missing value handling
-* Encoding categorical variables
-* Feature scaling
-* Train/test split
-
-Features to implement:
-
-* Upload CSV
-* Select target column
-* Detect regression or classification
-* Clean dataset automatically
-
----
-
-## Week 5 — Machine Learning
-
-Learn:
-
-scikit-learn
-
-Models:
-
-* Linear Regression
-* Logistic Regression
-* Decision Tree
-* Random Forest
-* Gradient Boosting
-
-Features:
-
-* Train multiple models
-* Compare model performance
-* Display evaluation metrics
-
-Regression metrics:
-
-* MAE
-* RMSE
-* R²
-
-Classification metrics:
-
-* Accuracy
-* Precision
-* Recall
-* F1-score
-
----
-
-## Week 6 — Model Improvement
-
-Learn:
-
-* Cross Validation
-* Hyperparameter tuning
-* Pipelines
-* Feature importance
-
-Features:
-
-* Automatic model comparison
-* Select best-performing model
-* Save trained model
-
-Use:
-
-* pickle or joblib
-
----
-
-## Week 7 — FastAPI
-
-Learn:
-
-* REST APIs
-* FastAPI
-* Request/Response
-* JSON
-
-Features:
-
-* POST /train
-* POST /predict
-* GET /models
-
-The application should be able to receive data and return predictions through an API.
-
----
-
-## Week 8 — Polish
-
-Improve:
-
-* Project structure
-* Documentation
-* README
-* Requirements file
-* Error handling
-* Code cleanup
-
-If time permits:
-
-* Dockerize the project
-* Add unit tests
-* Create a simple frontend using Streamlit
-
----
-
-# GitHub Portfolio
-
-By the end of summer my GitHub should contain:
-
-## Project 1
-
-CLI Task Manager
-
-Skills:
-
-* Python
-* OOP
-* File handling
-
----
-
-## Project 2
-
-Data Analysis Project
-
-Skills:
-
-* pandas
-* NumPy
-* SQL
-* Matplotlib
-
----
-
-## Project 3 (Flagship Project)
-
-Automatic Machine Learning Prediction Platform
-
-Skills:
-
-* Python
-* OOP
-* pandas
-* NumPy
 * scikit-learn
 * FastAPI
-* Git
-* Documentation
-* (Optional) Docker
-* (Optional) Streamlit
+* pandas
+* NumPy
 
 ---
 
-# Technologies to Learn
+## Technologies
 
-Programming
+### Programming
 
 * Python
-* OOP
+* Object-Oriented Programming
 * Git
 * GitHub
 
-Data
+### Data
 
 * NumPy
 * pandas
 * Matplotlib
 
-Databases
+### Databases
 
 * SQL
 * SQLite
 
-Machine Learning
+### Machine Learning
 
 * scikit-learn
 * Model evaluation
+* Feature engineering
 * Cross-validation
-* Hyperparameter tuning
 
-Backend
+### Backend
 
 * FastAPI
 
-Optional
+---
 
-* Docker
-* Streamlit
+## Learning Philosophy
+
+This repository is focused on learning through building.
+
+My priorities are:
+
+* Understand concepts instead of memorizing them.
+* Build complete projects instead of collecting unfinished ideas.
+* Write clean, readable code.
+* Push work to GitHub regularly.
+* Improve by completing increasingly challenging projects.
 
 ---
 
-# Things NOT to Learn Yet
+## Progress
 
-Do not spend significant time on:
+### Completed
 
-* TensorFlow
-* PyTorch
-* Large Language Models (LLMs)
-* Reinforcement Learning
-* AWS
-* Kubernetes
-* Apache Spark
-* Airflow
-* MLOps
+* [x] CLI Task Manager
 
-These topics are valuable later but are not the best use of this summer.
+### In Progress
+
+* [ ] Data Analysis Project
+
+### Planned
+
+* [ ] Machine Learning Prediction Platform
 
 ---
 
-# Guiding Principles
+## Long-Term Goal
 
-1. Focus on understanding, not memorization.
-
-2. Write code every day.
-
-3. Push every project to GitHub.
-
-4. Build software, not just Jupyter notebooks.
-
-5. Keep improving the main project every week.
-
-6. Write clean, readable, and well-documented code.
-
-7. Prioritize practical skills over advanced theory.
-
----
-
-# End-of-Summer Checklist
-
-Python
-
-* [ ] Comfortable with Python syntax
-* [ ] Comfortable with OOP
-* [ ] Comfortable debugging code
-
-Git
-
-* [ ] Use Git confidently
-* [ ] Maintain GitHub repositories
-
-Data
-
-* [ ] Comfortable with pandas
-* [ ] Comfortable with NumPy
-* [ ] Comfortable with SQL
-
-Machine Learning
-
-* [ ] Build regression models
-* [ ] Build classification models
-* [ ] Evaluate model performance
-* [ ] Perform hyperparameter tuning
-
-Software Engineering
-
-* [ ] Build REST APIs with FastAPI
-* [ ] Organize projects professionally
-* [ ] Write documentation
-
-Portfolio
-
-* [ ] Two to three polished small projects
-* [ ] One substantial machine learning application suitable for internship applications
-
----
-
-# Long-Term Goal
-
-Arrive at the University of Bremen with a strong software engineering foundation, a professional GitHub portfolio, and the practical skills needed to excel in machine learning courses and prepare for future ML engineering internships.
+My long-term goal is to build the software engineering and machine learning skills needed to succeed in my studies at the University of Bremen and prepare for future Machine Learning Engineering internships.
